@@ -1,6 +1,6 @@
-name: cron
+name: planet
 
-on: workflow_dispatch
+on: workflow
 
 jobs:
   cron:
