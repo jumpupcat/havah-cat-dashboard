@@ -1,6 +1,12 @@
 name: cd
 
-on: [push, create]
+on:
+  push:
+    branches: ["main"]
+  workflow_run:
+    workflows: ["lock", "planet"]
+    types:
+      - completed
 
 jobs:
   cd:
