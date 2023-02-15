@@ -324,7 +324,7 @@ export default function Dashboard() {
 									<CardHeader mb='24px'>
 										<Flex direction='column'>
 											<Text color='#fff' fontSize='lg' fontWeight='bold' mb='4px'>
-												HOLDER RATIO
+												PLANET RATIO
 											</Text>
 										</Flex>
 									</CardHeader>
