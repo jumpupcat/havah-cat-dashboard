@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/havah-cat-dashboard/static/js/main.3a4bb92e.js",
+    "static/media/background-body-admin.png": "/havah-cat-dashboard/static/media/background-body-admin.9a5703c114bec6efe39b.png",
+    "index.html": "/havah-cat-dashboard/index.html",
+    "main.3a4bb92e.js.map": "/havah-cat-dashboard/static/js/main.3a4bb92e.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.3a4bb92e.js"
+  ]
+}
