@@ -45,6 +45,7 @@ export default function Dashboard() {
 	const [personalHolder, setPersonalHolder] = useState(0);
 	const [mPlanet, setMPlanet] = useState(0);
 	const [vc, setVC] = useState(0);
+	const [hvhPrice, setHvhPrice] = useState(0.1);
 	const [chartData, setChartData] = useState([]);
 	const [tableData, setTableData] = useState([]);
 	const miningAmount = 4300000;
@@ -210,7 +211,7 @@ export default function Dashboard() {
 												</StatLabel>
 												<Flex>
 													<StatNumber fontSize='lg' color='#fff'>
-														{ (miningAmount/totalPlanet).toFixed(2) }
+														{ tableData[tableData.length-1]?.mining }
 													</StatNumber>
 													<StatHelpText
 														alignSelf='flex-end'
@@ -220,7 +221,7 @@ export default function Dashboard() {
 														fontWeight='bold'
 														ps='3px'
 														fontSize='md'>
-														-{ ((1 - ((miningAmount/totalPlanet) / (miningAmount/(totalPlanet-todayPlanet)))) * 100).toFixed(2) }%
+														-{ ((1 - (tableData[tableData.length-1]?.mining / tableData[tableData.length-2]?.mining)) * 100).toFixed(2) }%
 													</StatHelpText>
 												</Flex>
 											</Stat>
@@ -241,7 +242,7 @@ export default function Dashboard() {
 												</StatLabel>
 												<Flex>
 													<StatNumber fontSize='lg' color='#fff' fontWeight='bold'>
-														$0.1
+														${ hvhPrice.toFixed(2) }
 													</StatNumber>
 													<StatHelpText
 														alignSelf='flex-end'
