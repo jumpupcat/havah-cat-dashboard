@@ -35,6 +35,7 @@ import MainPanel from "components/Layout/MainPanel";
 import PanelContainer from "components/Layout/PanelContainer";
 import PanelContent from "components/Layout/PanelContent";
 import planetData from 'assets/data/planet.json';
+import lockData from 'assets/data/lock.json';
 
 export default function Dashboard() {
 	const mainPanel = React.createRef();
@@ -60,15 +61,28 @@ export default function Dashboard() {
 		planetData.map(p => {
 			const date = new Date(Date.parse(p.date) - (1000 * 60 * (60 * 2 + 9))).toISOString().slice(0, 10); 
 			if(!dashbordData[date]) dashbordData[date] = {};
+
 			if(!holder[p.address]) {
 				if(dashbordData[date].holder) dashbordData[date].holder++;
 				else dashbordData[date].holder = 1;
 			}
+
 			if(dashbordData[date].planet) dashbordData[date].planet++;
 			else dashbordData[date].planet = 1;
 
-			if(p.id < 45001) personal++;
-			if(p.id > 50000 && p.id < 100000) mini++;
+			if(p.id < 45001) {
+				if(dashbordData[date].personal) dashbordData[date].personal++;
+				else dashbordData[date].personal = 1;
+
+				personal++;
+			}
+
+			if(p.id > 50000 && p.id < 100000) {
+				if(dashbordData[date].mini) dashbordData[date].mini++;
+				else dashbordData[date].mini = 1;
+
+				mini++;
+			}
 			if(p.id > 100000) v++;
 			
 			holder[p.address] = 1;
@@ -105,21 +119,32 @@ export default function Dashboard() {
 		let tableDataDummy = [];
 		let dummySumP = 7086;
 		let dummySumH = 50;
+		let dummySumPH = 184 + 45;
+		let dummySumS = miningAmount / dummySumP * dummySumPH - lockData.shift();
 		let dummyDate = '2023-01-12';
 		do {
 			const currentH = dashbordData[dummyDate]?.holder ? dashbordData[dummyDate]?.holder : 0;
 			const currentP = dashbordData[dummyDate]?.planet ? dashbordData[dummyDate]?.planet : 0;
+
 			tableDataDummy.push({
 				date: dummyDate,
 				holders: currentH,
 				planet: currentP,
 				mining: (miningAmount/dummySumP).toFixed(2),
 				totalPlanet: dummySumP,
-				totalHolders: dummySumH
+				totalHolders: dummySumH,
+				holderSupply: Math.ceil(dummySumS)
 			});
 
 			dummySumH += currentH;
 			dummySumP += currentP;
+
+			if(dashbordData[dummyDate]?.personal) dummySumPH += dashbordData[dummyDate].personal;
+			if(dashbordData[dummyDate]?.mini) dummySumPH += dashbordData[dummyDate].mini * 0.9;
+			
+			let lockAmount = lockData.shift();
+			if(!lockAmount) lockAmount = 0;
+			dummySumS += miningAmount / dummySumP * dummySumPH - lockAmount;
 
 			dummyDate = new Date(Date.parse(dummyDate) + (1000 * 60 * 60 * 24)).toISOString().slice(0, 10);
 		} while(dummyDate != new Date(Date.parse(today) + (1000 * 60 * 60 * 24)).toISOString().slice(0, 10));
@@ -528,6 +553,9 @@ export default function Dashboard() {
 												<Th color='gray.400' fontFamily='Plus Jakarta Display' borderBottomColor='#56577A'>
 													TOTAL HOLDERS
 												</Th>
+												<Th color='gray.400' fontFamily='Plus Jakarta Display' borderBottomColor='#56577A'>
+													HOLDER SUPPLY
+												</Th>
 											</Tr>
 										</Thead>
 										<Tbody>
@@ -562,6 +590,11 @@ export default function Dashboard() {
 														<Td borderBottomColor='#56577A' >
 															<Text fontSize='sm' color='#fff' fontWeight='bold' pb='.5rem'>
 																{ numberFormat(t.totalHolders) }
+															</Text>
+														</Td>
+														<Td borderBottomColor='#56577A' >
+															<Text fontSize='sm' color='#fff' fontWeight='bold' pb='.5rem'>
+																{ numberFormat(t.holderSupply) }
 															</Text>
 														</Td>
 													</Tr>
