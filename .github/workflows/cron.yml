@@ -22,6 +22,9 @@ jobs:
       - name: get planet
         run: node src/assets/data/planet.js
 
+      - name: get lock
+        run: node src/assets/data/lock.js
+
       - name: Push Github
         run: |
           git config --global user.name "jumpupcat"
