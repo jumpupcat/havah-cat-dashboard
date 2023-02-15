@@ -2,7 +2,7 @@ name: cron
 
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '15 2 * * *'
 
 jobs:
   cron:
@@ -19,8 +19,8 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: get planet
-        run: node src/assets/data/planet.js
+      - name: get lock
+        run: node src/assets/data/lock.js
 
       - name: Push Github
         run: |
@@ -28,5 +28,5 @@ jobs:
           git config --global user.email "jumpupmoon@gmail.com"
           git pull origin main
           git add .
-          git commit -m "cron get planet" || exit 0
+          git commit -m "cron get lock" || exit 0
           git push
