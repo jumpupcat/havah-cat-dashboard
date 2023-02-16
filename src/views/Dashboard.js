@@ -550,9 +550,9 @@ export default function Dashboard() {
 												<Th color='gray.400' fontFamily='Plus Jakarta Display' borderBottomColor='#56577A'>
 													TOTAL PLANET
 												</Th>
-												<Th color='gray.400' fontFamily='Plus Jakarta Display' borderBottomColor='#56577A'>
+												{/* <Th color='gray.400' fontFamily='Plus Jakarta Display' borderBottomColor='#56577A'>
 													TOTAL HOLDERS
-												</Th>
+												</Th> */}
 												<Th color='gray.400' fontFamily='Plus Jakarta Display' borderBottomColor='#56577A'>
 													HOLDER SUPPLY
 												</Th>
@@ -587,11 +587,11 @@ export default function Dashboard() {
 																{ numberFormat(t.totalPlanet) }
 															</Text>
 														</Td>
-														<Td borderBottomColor='#56577A' >
+														{/* <Td borderBottomColor='#56577A' >
 															<Text fontSize='sm' color='#fff' fontWeight='bold' pb='.5rem'>
 																{ numberFormat(t.totalHolders) }
 															</Text>
-														</Td>
+														</Td> */}
 														<Td borderBottomColor='#56577A' >
 															<Text fontSize='sm' color='#fff' fontWeight='bold' pb='.5rem'>
 																{ numberFormat(t.holderSupply) }
