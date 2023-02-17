@@ -15,14 +15,14 @@ const oneSecSleep = () => new Promise(resolve => setTimeout(resolve, 1000));
         );
         
         lastDay = result.data.message.dayAll;
-        if(result.data.message.msg.result.unrewarded) {
+        if(result.data.message.msg.result?.unrewarded) {
             lock[targetDay] = result.data.message.msg.result.unrewarded;
         }
 
         targetDay++;
 
         await oneSecSleep();
-    } while(targetDay != lastDay);
+    } while(targetDay < lastDay);
 
     fs.writeFileSync('src/assets/data/lock.json', JSON.stringify(lock, null, 4));
 
