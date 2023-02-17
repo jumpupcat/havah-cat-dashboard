@@ -1,8 +1,6 @@
 name: lock
 
-on:
-  schedule:
-    - cron: '15 2 * * *'
+on: workflow_dispatch
 
 jobs:
   cron:
