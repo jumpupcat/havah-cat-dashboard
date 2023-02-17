@@ -4,7 +4,6 @@ import {
 	SimpleGrid,
 	Spacer,
 	Stat,
-	StatHelpText,
 	StatLabel,
 	StatNumber,
 } from '@chakra-ui/react';
@@ -18,9 +17,7 @@ export default function TopDashboad() {
     const [hvhPrice, setHvhPrice] = useState(0.1);
     const { 
         totalPlanet,
-        todayPlanet,
         totalHolder,
-        todayHolder,
         tableData,
     } = DashboardData;
 
@@ -38,16 +35,6 @@ export default function TopDashboad() {
                             <StatNumber fontSize='lg' color='#fff'>
                                 { numberFormat(totalPlanet) }
                             </StatNumber>
-                            <StatHelpText
-                                alignSelf='flex-end'
-                                justifySelf='flex-end'
-                                m='0px'
-                                color='green.400'
-                                fontWeight='bold'
-                                ps='3px'
-                                fontSize='md'>
-                                +{ (todayPlanet / totalPlanet * 100).toFixed(2) }%
-                            </StatHelpText>
                         </Flex>
                     </Stat>
                     <IconBox as='box' h={'45px'} w={'45px'} bg='brand.200'>
@@ -68,16 +55,6 @@ export default function TopDashboad() {
                             <StatNumber fontSize='lg' color='#fff'>
                                 { numberFormat(totalHolder) }
                             </StatNumber>
-                            <StatHelpText
-                                alignSelf='flex-end'
-                                justifySelf='flex-end'
-                                m='0px'
-                                color='green.400'
-                                fontWeight='bold'
-                                ps='3px'
-                                fontSize='md'>
-                                +{ (todayHolder / totalHolder * 100).toFixed(2) }%
-                            </StatHelpText>
                         </Flex>
                     </Stat>
                     <IconBox as='box' h={'45px'} w={'45px'} bg='brand.200'>
@@ -98,16 +75,6 @@ export default function TopDashboad() {
                             <StatNumber fontSize='lg' color='#fff'>
                                 { tableData[tableData.length-1]?.mining }
                             </StatNumber>
-                            <StatHelpText
-                                alignSelf='flex-end'
-                                justifySelf='flex-end'
-                                m='0px'
-                                color='red.500'
-                                fontWeight='bold'
-                                ps='3px'
-                                fontSize='md'>
-                                -{ ((1 - (tableData[tableData.length-1]?.mining / tableData[tableData.length-2]?.mining)) * 100).toFixed(2) }%
-                            </StatHelpText>
                         </Flex>
                     </Stat>
                     <Spacer />
@@ -129,16 +96,6 @@ export default function TopDashboad() {
                             <StatNumber fontSize='lg' color='#fff' fontWeight='bold'>
                                 ${ hvhPrice.toFixed(2) }
                             </StatNumber>
-                            <StatHelpText
-                                alignSelf='flex-end'
-                                justifySelf='flex-end'
-                                m='0px'
-                                color='green.400'
-                                fontWeight='bold'
-                                ps='3px'
-                                fontSize='md'>
-                                +0%
-                            </StatHelpText>
                         </Flex>
                     </Stat>
                     <IconBox as='box' h={'45px'} w={'45px'} bg='brand.200'>

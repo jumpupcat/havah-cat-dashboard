@@ -87,15 +87,6 @@ function setDashBoad (planetData) {
     dashbordData.mPlanet = mini;
     dashbordData.vc = vc;
 
-    dashbordData.todayHolder = 0;
-    dashbordData.todayPlanet = 0;
-
-    const today = new Date(Date.parse(new Date()) - (1000 * 60 * (60 * 2 + 15))).toISOString().slice(0, 10);
-    if(dashbordData[today]) {
-        if(dashbordData[today].holder) dashbordData.todayHolder = dashbordData[today].holder;
-        if(dashbordData[today].planet) dashbordData.todayPlanet = dashbordData[today].planet;
-    }
-
     dashbordData.chartData = [
         { name: 'PLANET', data: [] },
         { name: 'HOLDER', data: [] }
@@ -114,6 +105,7 @@ function setDashBoad (planetData) {
     }
 
     const lockData = JSON.parse(fs.readFileSync('src/assets/data/lock.json'));
+    const today = new Date(Date.parse(new Date()) - (1000 * 60 * (60 * 2 + 15))).toISOString().slice(0, 10);
 
     dashbordData.tableData = [];
     let sumPlanet = 7086;
