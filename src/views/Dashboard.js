@@ -118,7 +118,7 @@ export default function Dashboard() {
 
 		let tableDataDummy = [];
 		let dummySumP = 7086;
-		let dummySumH = 50;
+		let dummySumH = 270;
 		let dummySumPH = 184 + 45;
 		let dummySumS = miningAmount / dummySumP * dummySumPH - lockData.shift();
 		let dummyDate = '2023-01-12';
@@ -532,27 +532,27 @@ export default function Dashboard() {
 										<Thead>
 											<Tr my='.8rem' ps='0px'>
 												<Th
-													// ps='0px'
+													ps='0px'
 													color='gray.400'
 													fontFamily='Plus Jakarta Display'
 													borderBottomColor='#56577A'>
 													DATE
 												</Th>
 												<Th color='gray.400' fontFamily='Plus Jakarta Display' borderBottomColor='#56577A'>
-													PLANET
+													NEW PLANET
 												</Th>
 												<Th color='gray.400' fontFamily='Plus Jakarta Display' borderBottomColor='#56577A'>
-													HOLDERS
+													NEW HOLDER
 												</Th>
 												<Th color='gray.400' fontFamily='Plus Jakarta Display' borderBottomColor='#56577A'>
-													MINING
+													MINING PLANET
 												</Th>
 												<Th color='gray.400' fontFamily='Plus Jakarta Display' borderBottomColor='#56577A'>
-													TOTAL PLANET
+													MINING HOLDER
 												</Th>
-												{/* <Th color='gray.400' fontFamily='Plus Jakarta Display' borderBottomColor='#56577A'>
-													TOTAL HOLDERS
-												</Th> */}
+												<Th color='gray.400' fontFamily='Plus Jakarta Display' borderBottomColor='#56577A'>
+													MINING AMOUNT
+												</Th>
 												<Th color='gray.400' fontFamily='Plus Jakarta Display' borderBottomColor='#56577A'>
 													HOLDER SUPPLY
 												</Th>
@@ -562,7 +562,7 @@ export default function Dashboard() {
 											{
 												tableData.reverse().map(t => (
 													<Tr>
-														<Td borderBottomColor='#56577A' >
+														<Td ps='0px' borderBottomColor='#56577A' >
 															<Text fontSize='sm' color='#fff' fontWeight='bold' pb='.5rem'>
 																{ t.date }
 															</Text>
@@ -579,19 +579,19 @@ export default function Dashboard() {
 														</Td>
 														<Td borderBottomColor='#56577A' >
 															<Text fontSize='sm' color='#fff' fontWeight='bold' pb='.5rem'>
-																{ t.mining }
+																{ numberFormat(t.totalPlanet) }
 															</Text>
 														</Td>
 														<Td borderBottomColor='#56577A' >
 															<Text fontSize='sm' color='#fff' fontWeight='bold' pb='.5rem'>
-																{ numberFormat(t.totalPlanet) }
-															</Text>
-														</Td>
-														{/* <Td borderBottomColor='#56577A' >
-															<Text fontSize='sm' color='#fff' fontWeight='bold' pb='.5rem'>
 																{ numberFormat(t.totalHolders) }
 															</Text>
-														</Td> */}
+														</Td>
+														<Td borderBottomColor='#56577A' >
+															<Text fontSize='sm' color='#fff' fontWeight='bold' pb='.5rem'>
+																{ t.mining }
+															</Text>
+														</Td>
 														<Td borderBottomColor='#56577A' >
 															<Text fontSize='sm' color='#fff' fontWeight='bold' pb='.5rem'>
 																{ numberFormat(t.holderSupply) }
