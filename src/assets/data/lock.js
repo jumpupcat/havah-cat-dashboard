@@ -25,4 +25,6 @@ const oneSecSleep = () => new Promise(resolve => setTimeout(resolve, 1000));
     } while(targetDay != lastDay);
 
     fs.writeFileSync('src/assets/data/lock.json', JSON.stringify(lock, null, 4));
+
+    require('./planet');
 })()
