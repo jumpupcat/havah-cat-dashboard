@@ -90,7 +90,7 @@ function setDashBoad (planetData) {
     dashbordData.todayHolder = 0;
     dashbordData.todayPlanet = 0;
 
-    const today = new Date(Date.parse(new Date()) - (1000 * 60 * (60 * 2 + 9))).toISOString().slice(0, 10);
+    const today = new Date(Date.parse(new Date()) - (1000 * 60 * (60 * 2 + 15))).toISOString().slice(0, 10);
     if(dashbordData[today]) {
         if(dashbordData[today].holder) dashbordData.todayHolder = dashbordData[today].holder;
         if(dashbordData[today].planet) dashbordData.todayPlanet = dashbordData[today].planet;
@@ -102,7 +102,7 @@ function setDashBoad (planetData) {
     ];
     let j = 0;
     for(let i=11; i>=0; i--) {
-        const keyDate = new Date(Date.parse(new Date()) - (1000 * 60 * (60 * 2 + 9)) - ((1000 * 60 * 60 * 24)* i)).toISOString().slice(0, 10);
+        const keyDate = new Date(Date.parse(new Date()) - (1000 * 60 * (60 * 2 + 15)) - ((1000 * 60 * 60 * 24)* i)).toISOString().slice(0, 10);
         const defaultChartData = { x: keyDate, y: 0 }
         dashbordData.chartData[0].data[j] = { ...defaultChartData };
         dashbordData.chartData[1].data[j] = { ...defaultChartData };
