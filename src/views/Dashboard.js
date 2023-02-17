@@ -520,7 +520,7 @@ export default function Dashboard() {
 
 							<Grid templateColumns={{ sm: '1fr' }} gap='24px'>
 								{/* Projects */}
-								<Card p='16px' overflowX={{ sm: 'scroll', xl: 'hidden' }}>
+								<Card p='16px'>
 									<CardHeader p='12px 0px 28px 0px'>
 										<Flex direction='column'>
 											<Text fontSize='lg' color='#fff' fontWeight='bold' pb='8px'>
@@ -532,29 +532,30 @@ export default function Dashboard() {
 										<Thead>
 											<Tr my='.8rem' ps='0px'>
 												<Th
-													ps='0px'
 													color='gray.400'
 													fontFamily='Plus Jakarta Display'
-													borderBottomColor='#56577A'>
+													borderBottomColor='#56577A'
+													textAlign="center"
+												>
 													DATE
 												</Th>
-												<Th color='gray.400' fontFamily='Plus Jakarta Display' borderBottomColor='#56577A'>
+												<Th color='gray.400' fontFamily='Plus Jakarta Display' borderBottomColor='#56577A' textAlign="center">
 													NEW PLANET
 												</Th>
-												<Th color='gray.400' fontFamily='Plus Jakarta Display' borderBottomColor='#56577A'>
+												<Th color='gray.400' fontFamily='Plus Jakarta Display' borderBottomColor='#56577A' textAlign="center">
 													NEW HOLDER
 												</Th>
-												<Th color='gray.400' fontFamily='Plus Jakarta Display' borderBottomColor='#56577A'>
+												<Th color='gray.400' fontFamily='Plus Jakarta Display' borderBottomColor='#56577A' textAlign="center">
 													MINING PLANET
 												</Th>
-												<Th color='gray.400' fontFamily='Plus Jakarta Display' borderBottomColor='#56577A'>
+												<Th color='gray.400' fontFamily='Plus Jakarta Display' borderBottomColor='#56577A' textAlign="center">
 													MINING HOLDER
 												</Th>
-												<Th color='gray.400' fontFamily='Plus Jakarta Display' borderBottomColor='#56577A'>
-													MINING AMOUNT
+												<Th color='gray.400' fontFamily='Plus Jakarta Display' borderBottomColor='#56577A' textAlign="center">
+													MINING
 												</Th>
-												<Th color='gray.400' fontFamily='Plus Jakarta Display' borderBottomColor='#56577A'>
-													HOLDER SUPPLY
+												<Th color='gray.400' fontFamily='Plus Jakarta Display' borderBottomColor='#56577A' textAlign="center">
+													PERSONAL SUPPLY
 												</Th>
 											</Tr>
 										</Thead>
@@ -562,38 +563,38 @@ export default function Dashboard() {
 											{
 												tableData.reverse().map(t => (
 													<Tr>
-														<Td ps='0px' borderBottomColor='#56577A' >
-															<Text fontSize='sm' color='#fff' fontWeight='bold' pb='.5rem'>
+														<Td borderBottomColor='#56577A' >
+															<Text fontSize='sm' color='#fff' fontWeight='bold' pb='.5rem' textAlign="center">
 																{ t.date }
 															</Text>
 														</Td>
 														<Td borderBottomColor='#56577A' >
-															<Text fontSize='sm' color='#fff' fontWeight='bold' pb='.5rem'>
+															<Text fontSize='sm' color='#fff' fontWeight='bold' pb='.5rem' textAlign="center">
 																{ numberFormat(t.planet) }
 															</Text>
 														</Td>
 														<Td borderBottomColor='#56577A' >
-															<Text fontSize='sm' color='#fff' fontWeight='bold' pb='.5rem'>
+															<Text fontSize='sm' color='#fff' fontWeight='bold' pb='.5rem' textAlign="center">
 																{ numberFormat(t.holders) }
 															</Text>
 														</Td>
 														<Td borderBottomColor='#56577A' >
-															<Text fontSize='sm' color='#fff' fontWeight='bold' pb='.5rem'>
+															<Text fontSize='sm' color='#fff' fontWeight='bold' pb='.5rem' textAlign="center">
 																{ numberFormat(t.totalPlanet) }
 															</Text>
 														</Td>
 														<Td borderBottomColor='#56577A' >
-															<Text fontSize='sm' color='#fff' fontWeight='bold' pb='.5rem'>
+															<Text fontSize='sm' color='#fff' fontWeight='bold' pb='.5rem' textAlign="center">
 																{ numberFormat(t.totalHolders) }
 															</Text>
 														</Td>
 														<Td borderBottomColor='#56577A' >
-															<Text fontSize='sm' color='#fff' fontWeight='bold' pb='.5rem'>
+															<Text fontSize='sm' color='#fff' fontWeight='bold' pb='.5rem' textAlign="center">
 																{ t.mining }
 															</Text>
 														</Td>
 														<Td borderBottomColor='#56577A' >
-															<Text fontSize='sm' color='#fff' fontWeight='bold' pb='.5rem'>
+															<Text fontSize='sm' color='#fff' fontWeight='bold' pb='.5rem' textAlign="center">
 																{ numberFormat(t.holderSupply) }
 															</Text>
 														</Td>
