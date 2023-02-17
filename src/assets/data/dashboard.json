@@ -262,17 +262,15 @@
         "personal": 14
     },
     "2023-02-17": {
-        "holder": 1,
-        "planet": 1,
-        "personal": 1
+        "holder": 2,
+        "planet": 2,
+        "personal": 2
     },
-    "totalPlanet": 7439,
-    "totalHolder": 408,
-    "personalHolder": 497,
+    "totalPlanet": 7440,
+    "totalHolder": 409,
+    "personalHolder": 498,
     "mPlanet": 50,
     "vc": 1892,
-    "todayHolder": 1,
-    "todayPlanet": 1,
     "chartData": [
         {
             "name": "PLANET",
@@ -323,7 +321,7 @@
                 },
                 {
                     "x": "2023-02-17",
-                    "y": 1
+                    "y": 2
                 }
             ]
         },
@@ -376,7 +374,7 @@
                 },
                 {
                     "x": "2023-02-17",
-                    "y": 1
+                    "y": 2
                 }
             ]
         }
@@ -708,8 +706,8 @@
         },
         {
             "date": "2023-02-17",
-            "holders": 1,
-            "planet": 1,
+            "holders": 2,
+            "planet": 2,
             "mining": "578.11",
             "totalPlanet": 7438,
             "totalHolders": 407,
