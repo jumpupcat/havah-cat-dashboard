@@ -6,6 +6,7 @@ import {
 	Stat,
 	StatLabel,
 	StatNumber,
+    Skeleton
 } from '@chakra-ui/react';
 import { PersonIcon, GlobeIcon, WalletIcon, RocketIcon } from 'components/Icons/Icons.js';
 import Card from 'components/Card/Card.js';
@@ -14,7 +15,7 @@ import IconBox from 'components/Icons/IconBox';
 import DashboardData from 'assets/data/dashboard.json';
 
 export default function TopDashboad() {
-    const [hvhPrice, setHvhPrice] = useState(0.1);
+    const [hvhPrice, setHvhPrice] = useState(0);
     const { 
         totalPlanet,
         totalHolder,
@@ -22,6 +23,12 @@ export default function TopDashboad() {
     } = DashboardData;
 
     const numberFormat = (num) => [num].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    
+    const priceBlock = () => (
+        <StatNumber fontSize='lg' color='#fff' fontWeight='bold'>
+            ${ hvhPrice.toFixed(2) }
+        </StatNumber>
+    );
     
     return <SimpleGrid columns={{ sm: 1, md: 2, xl: 4 }} spacing='24px'>
         <Card>
@@ -93,9 +100,14 @@ export default function TopDashboad() {
                             PRICE
                         </StatLabel>
                         <Flex>
-                            <StatNumber fontSize='lg' color='#fff' fontWeight='bold'>
-                                ${ hvhPrice.toFixed(2) }
-                            </StatNumber>
+                            {
+                                hvhPrice > 0 ? priceBlock()
+                                :
+                                    <Skeleton startColor='gray.400' endColor='#fff'>
+                                        { priceBlock() }
+                                    </Skeleton>
+                            }
+                            
                         </Flex>
                     </Stat>
                     <IconBox as='box' h={'45px'} w={'45px'} bg='brand.200'>
