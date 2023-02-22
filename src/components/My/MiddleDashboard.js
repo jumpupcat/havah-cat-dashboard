@@ -179,7 +179,7 @@ export default function MiddleDashboard() {
                                 CURRENT PRICE
                             </Text>
                             <Text color='#fff' fontSize='lg' fontWeight='bold'>
-                                { (5000 * (1.007 ** (currentRound() - 1))).toFixed(2) } USDT
+                                { (5000 * (1.007 ** (currentRound() - 1))).toFixed(4) } USDT
                             </Text>
                         </Flex>
                         <Flex
@@ -193,7 +193,7 @@ export default function MiddleDashboard() {
                                 NEXT PRICE
                             </Text>
                             <Text color='#fff' fontSize='lg' fontWeight='bold'>
-                            { (5000 * (1.007 ** currentRound())).toFixed(2) } USDT
+                            { (5000 * (1.007 ** currentRound())).toFixed(4) } USDT
                             </Text>
                         </Flex>
                     </Flex>

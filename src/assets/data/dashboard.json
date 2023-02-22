@@ -410,7 +410,7 @@
             "date": "2023-01-12",
             "holders": 10,
             "planet": 22,
-            "mining": "606.83",
+            "mining": "606.8304",
             "totalPlanet": 7086,
             "totalHolders": 270,
             "holderSupply": 98914
@@ -419,7 +419,7 @@
             "date": "2023-01-13",
             "holders": 4,
             "planet": 29,
-            "mining": "604.95",
+            "mining": "604.9522",
             "totalPlanet": 7108,
             "totalHolders": 280,
             "holderSupply": 228979
@@ -428,7 +428,7 @@
             "date": "2023-01-14",
             "holders": 1,
             "planet": 3,
-            "mining": "602.49",
+            "mining": "602.4940",
             "totalPlanet": 7137,
             "totalHolders": 284,
             "holderSupply": 358515
@@ -437,7 +437,7 @@
             "date": "2023-01-15",
             "holders": 2,
             "planet": 2,
-            "mining": "602.24",
+            "mining": "602.2409",
             "totalPlanet": 7140,
             "totalHolders": 285,
             "holderSupply": 487394
@@ -446,7 +446,7 @@
             "date": "2023-01-16",
             "holders": 4,
             "planet": 11,
-            "mining": "602.07",
+            "mining": "602.0722",
             "totalPlanet": 7142,
             "totalHolders": 287,
             "holderSupply": 638514
@@ -455,7 +455,7 @@
             "date": "2023-01-17",
             "holders": 0,
             "planet": 3,
-            "mining": "601.15",
+            "mining": "601.1464",
             "totalPlanet": 7153,
             "totalHolders": 291,
             "holderSupply": 801425
@@ -464,7 +464,7 @@
             "date": "2023-01-18",
             "holders": 2,
             "planet": 4,
-            "mining": "600.89",
+            "mining": "600.8944",
             "totalPlanet": 7156,
             "totalHolders": 291,
             "holderSupply": 959460
@@ -473,7 +473,7 @@
             "date": "2023-01-19",
             "holders": 3,
             "planet": 13,
-            "mining": "600.56",
+            "mining": "600.5587",
             "totalPlanet": 7160,
             "totalHolders": 293,
             "holderSupply": 1125815
@@ -482,7 +482,7 @@
             "date": "2023-01-20",
             "holders": 3,
             "planet": 10,
-            "mining": "599.47",
+            "mining": "599.4702",
             "totalPlanet": 7173,
             "totalHolders": 296,
             "holderSupply": 1295465
@@ -491,7 +491,7 @@
             "date": "2023-01-21",
             "holders": 0,
             "planet": 7,
-            "mining": "598.64",
+            "mining": "598.6357",
             "totalPlanet": 7183,
             "totalHolders": 299,
             "holderSupply": 1467872
@@ -500,7 +500,7 @@
             "date": "2023-01-22",
             "holders": 0,
             "planet": 1,
-            "mining": "598.05",
+            "mining": "598.0529",
             "totalPlanet": 7190,
             "totalHolders": 299,
             "holderSupply": 1646092
@@ -509,7 +509,7 @@
             "date": "2023-01-23",
             "holders": 0,
             "planet": 6,
-            "mining": "597.97",
+            "mining": "597.9697",
             "totalPlanet": 7191,
             "totalHolders": 299,
             "holderSupply": 1824885
@@ -518,7 +518,7 @@
             "date": "2023-01-24",
             "holders": 2,
             "planet": 8,
-            "mining": "597.47",
+            "mining": "597.4712",
             "totalPlanet": 7197,
             "totalHolders": 299,
             "holderSupply": 2006516
@@ -527,7 +527,7 @@
             "date": "2023-01-25",
             "holders": 3,
             "planet": 26,
-            "mining": "596.81",
+            "mining": "596.8078",
             "totalPlanet": 7205,
             "totalHolders": 301,
             "holderSupply": 2192123
@@ -536,7 +536,7 @@
             "date": "2023-01-26",
             "holders": 5,
             "planet": 20,
-            "mining": "594.66",
+            "mining": "594.6619",
             "totalPlanet": 7231,
             "totalHolders": 304,
             "holderSupply": 2384794
@@ -545,7 +545,7 @@
             "date": "2023-01-27",
             "holders": 2,
             "planet": 4,
-            "mining": "593.02",
+            "mining": "593.0217",
             "totalPlanet": 7251,
             "totalHolders": 309,
             "holderSupply": 2586421
@@ -554,7 +554,7 @@
             "date": "2023-01-28",
             "holders": 1,
             "planet": 1,
-            "mining": "592.69",
+            "mining": "592.6947",
             "totalPlanet": 7255,
             "totalHolders": 311,
             "holderSupply": 2771342
@@ -563,7 +563,7 @@
             "date": "2023-01-29",
             "holders": 1,
             "planet": 2,
-            "mining": "592.61",
+            "mining": "592.6130",
             "totalPlanet": 7256,
             "totalHolders": 312,
             "holderSupply": 2976386
@@ -572,7 +572,7 @@
             "date": "2023-01-30",
             "holders": 1,
             "planet": 4,
-            "mining": "592.45",
+            "mining": "592.4497",
             "totalPlanet": 7258,
             "totalHolders": 313,
             "holderSupply": 3172487
@@ -581,7 +581,7 @@
             "date": "2023-01-31",
             "holders": 2,
             "planet": 7,
-            "mining": "592.12",
+            "mining": "592.1234",
             "totalPlanet": 7262,
             "totalHolders": 314,
             "holderSupply": 3370848
@@ -590,7 +590,7 @@
             "date": "2023-02-01",
             "holders": 5,
             "planet": 9,
-            "mining": "591.55",
+            "mining": "591.5532",
             "totalPlanet": 7269,
             "totalHolders": 316,
             "holderSupply": 3573159
@@ -599,7 +599,7 @@
             "date": "2023-02-02",
             "holders": 4,
             "planet": 5,
-            "mining": "590.82",
+            "mining": "590.8217",
             "totalPlanet": 7278,
             "totalHolders": 321,
             "holderSupply": 3772857
@@ -608,7 +608,7 @@
             "date": "2023-02-03",
             "holders": 8,
             "planet": 11,
-            "mining": "590.42",
+            "mining": "590.4160",
             "totalPlanet": 7283,
             "totalHolders": 325,
             "holderSupply": 3983045
@@ -617,7 +617,7 @@
             "date": "2023-02-04",
             "holders": 6,
             "planet": 17,
-            "mining": "589.53",
+            "mining": "589.5256",
             "totalPlanet": 7294,
             "totalHolders": 333,
             "holderSupply": 4191148
@@ -626,7 +626,7 @@
             "date": "2023-02-05",
             "holders": 5,
             "planet": 5,
-            "mining": "588.15",
+            "mining": "588.1548",
             "totalPlanet": 7311,
             "totalHolders": 339,
             "holderSupply": 4409353
@@ -635,7 +635,7 @@
             "date": "2023-02-06",
             "holders": 10,
             "planet": 14,
-            "mining": "587.75",
+            "mining": "587.7529",
             "totalPlanet": 7316,
             "totalHolders": 344,
             "holderSupply": 4649744
@@ -644,7 +644,7 @@
             "date": "2023-02-07",
             "holders": 8,
             "planet": 10,
-            "mining": "586.63",
+            "mining": "586.6303",
             "totalPlanet": 7330,
             "totalHolders": 354,
             "holderSupply": 4873837
@@ -653,7 +653,7 @@
             "date": "2023-02-08",
             "holders": 5,
             "planet": 8,
-            "mining": "585.83",
+            "mining": "585.8311",
             "totalPlanet": 7340,
             "totalHolders": 362,
             "holderSupply": 5125158
@@ -662,7 +662,7 @@
             "date": "2023-02-09",
             "holders": 8,
             "planet": 10,
-            "mining": "585.19",
+            "mining": "585.1932",
             "totalPlanet": 7348,
             "totalHolders": 367,
             "holderSupply": 5389081
@@ -671,7 +671,7 @@
             "date": "2023-02-10",
             "holders": 8,
             "planet": 21,
-            "mining": "584.40",
+            "mining": "584.3979",
             "totalPlanet": 7358,
             "totalHolders": 375,
             "holderSupply": 5656735
@@ -680,7 +680,7 @@
             "date": "2023-02-11",
             "holders": 10,
             "planet": 15,
-            "mining": "582.73",
+            "mining": "582.7348",
             "totalPlanet": 7379,
             "totalHolders": 383,
             "holderSupply": 5935283
@@ -689,7 +689,7 @@
             "date": "2023-02-12",
             "holders": 2,
             "planet": 2,
-            "mining": "581.55",
+            "mining": "581.5526",
             "totalPlanet": 7394,
             "totalHolders": 393,
             "holderSupply": 6194655
@@ -698,7 +698,7 @@
             "date": "2023-02-13",
             "holders": 2,
             "planet": 8,
-            "mining": "581.40",
+            "mining": "581.3953",
             "totalPlanet": 7396,
             "totalHolders": 395,
             "holderSupply": 6475469
@@ -707,7 +707,7 @@
             "date": "2023-02-14",
             "holders": 1,
             "planet": 6,
-            "mining": "580.77",
+            "mining": "580.7672",
             "totalPlanet": 7404,
             "totalHolders": 397,
             "holderSupply": 6762368
@@ -716,7 +716,7 @@
             "date": "2023-02-15",
             "holders": 5,
             "planet": 14,
-            "mining": "580.30",
+            "mining": "580.2969",
             "totalPlanet": 7410,
             "totalHolders": 398,
             "holderSupply": 7040330
@@ -725,7 +725,7 @@
             "date": "2023-02-16",
             "holders": 4,
             "planet": 14,
-            "mining": "579.20",
+            "mining": "579.2026",
             "totalPlanet": 7424,
             "totalHolders": 403,
             "holderSupply": 7341516
@@ -734,7 +734,7 @@
             "date": "2023-02-17",
             "holders": 4,
             "planet": 4,
-            "mining": "578.11",
+            "mining": "578.1124",
             "totalPlanet": 7438,
             "totalHolders": 407,
             "holderSupply": 7649071
@@ -743,7 +743,7 @@
             "date": "2023-02-18",
             "holders": 5,
             "planet": 8,
-            "mining": "577.80",
+            "mining": "577.8017",
             "totalPlanet": 7442,
             "totalHolders": 411,
             "holderSupply": 7953573
@@ -752,7 +752,7 @@
             "date": "2023-02-19",
             "holders": 3,
             "planet": 10,
-            "mining": "577.18",
+            "mining": "577.1812",
             "totalPlanet": 7450,
             "totalHolders": 416,
             "holderSupply": 8264096
@@ -761,7 +761,7 @@
             "date": "2023-02-20",
             "holders": 4,
             "planet": 59,
-            "mining": "576.41",
+            "mining": "576.4075",
             "totalPlanet": 7460,
             "totalHolders": 419,
             "holderSupply": 8581697
@@ -770,7 +770,7 @@
             "date": "2023-02-21",
             "holders": 2,
             "planet": 20,
-            "mining": "571.88",
+            "mining": "571.8846",
             "totalPlanet": 7519,
             "totalHolders": 423,
             "holderSupply": 8934435
@@ -779,7 +779,7 @@
             "date": "2023-02-22",
             "holders": 1,
             "planet": 5,
-            "mining": "570.37",
+            "mining": "570.3674",
             "totalPlanet": 7539,
             "totalHolders": 425,
             "holderSupply": 9297645

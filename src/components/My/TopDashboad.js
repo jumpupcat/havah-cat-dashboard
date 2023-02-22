@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 import {
 	Flex,
 	SimpleGrid,
@@ -22,11 +23,18 @@ export default function TopDashboad() {
         tableData,
     } = DashboardData;
 
+    useEffect(() => {
+        axios.get('https://api.coingecko.com/api/v3/simple/price?ids=havah&vs_currencies=usd')
+        .then(({ data: { havah: { usd } } }) => {
+            setHvhPrice(usd);
+        })
+    });
+
     const numberFormat = (num) => [num].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
     
     const priceBlock = () => (
         <StatNumber fontSize='lg' color='#fff' fontWeight='bold'>
-            ${ hvhPrice.toFixed(2) }
+            ${ hvhPrice.toFixed(4) }
         </StatNumber>
     );
     

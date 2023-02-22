@@ -121,7 +121,7 @@ function setDashBoad (planetData) {
             date: targetDate,
             holders: currentH,
             planet: currentP,
-            mining: (miningAmount/sumPlanet).toFixed(2),
+            mining: (miningAmount/sumPlanet).toFixed(4),
             totalPlanet: sumPlanet,
             totalHolders: sumHolder,
             holderSupply: Math.ceil(sumSupply)
