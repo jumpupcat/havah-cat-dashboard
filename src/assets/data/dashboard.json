@@ -288,23 +288,19 @@
         "holder": 2
     },
     "2023-02-22": {
-        "planet": 5,
-        "personal": 5,
+        "planet": 6,
+        "personal": 6,
         "holder": 1
     },
-    "totalPlanet": 7544,
+    "totalPlanet": 7545,
     "totalHolder": 426,
-    "personalHolder": 550,
+    "personalHolder": 551,
     "mPlanet": 102,
     "vc": 1892,
     "chartData": [
         {
             "name": "PLANET",
             "data": [
-                {
-                    "x": "2023-02-11",
-                    "y": 15
-                },
                 {
                     "x": "2023-02-12",
                     "y": 2
@@ -347,17 +343,17 @@
                 },
                 {
                     "x": "2023-02-22",
-                    "y": 5
+                    "y": 6
+                },
+                {
+                    "x": "2023-02-23",
+                    "y": 0
                 }
             ]
         },
         {
             "name": "HOLDER",
             "data": [
-                {
-                    "x": "2023-02-11",
-                    "y": 10
-                },
                 {
                     "x": "2023-02-12",
                     "y": 2
@@ -401,6 +397,10 @@
                 {
                     "x": "2023-02-22",
                     "y": 1
+                },
+                {
+                    "x": "2023-02-23",
+                    "y": 0
                 }
             ]
         }
@@ -773,16 +773,25 @@
             "mining": "571.8846",
             "totalPlanet": 7519,
             "totalHolders": 423,
-            "holderSupply": 8934435
+            "holderSupply": 8932720
         },
         {
             "date": "2023-02-22",
             "holders": 1,
-            "planet": 5,
+            "planet": 6,
             "mining": "570.3674",
             "totalPlanet": 7539,
             "totalHolders": 425,
-            "holderSupply": 9297645
+            "holderSupply": 9295930
+        },
+        {
+            "date": "2023-02-23",
+            "holders": 0,
+            "planet": 0,
+            "mining": "569.9139",
+            "totalPlanet": 7545,
+            "totalHolders": 426,
+            "holderSupply": 9662270
         }
     ]
 }
