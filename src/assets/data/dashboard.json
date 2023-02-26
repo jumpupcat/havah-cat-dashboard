@@ -308,13 +308,13 @@
         "holder": 1
     },
     "2023-02-26": {
-        "planet": 7,
-        "personal": 7,
+        "planet": 8,
+        "personal": 8,
         "holder": 2
     },
-    "totalPlanet": 7578,
+    "totalPlanet": 7579,
     "totalHolder": 437,
-    "personalHolder": 584,
+    "personalHolder": 585,
     "mPlanet": 102,
     "vc": 1892,
     "chartData": [
@@ -367,7 +367,7 @@
                 },
                 {
                     "x": "2023-02-26",
-                    "y": 7
+                    "y": 8
                 }
             ]
         },
@@ -834,7 +834,7 @@
         {
             "date": "2023-02-26",
             "holders": 2,
-            "planet": 7,
+            "planet": 8,
             "mining": "567.9567",
             "totalPlanet": 7571,
             "totalHolders": 435,
