@@ -20,7 +20,6 @@ export default function TopDashboad() {
     const { 
         totalPlanet,
         totalHolder,
-        tableData,
     } = DashboardData;
 
     useEffect(() => {
@@ -88,7 +87,7 @@ export default function TopDashboad() {
                         </StatLabel>
                         <Flex>
                             <StatNumber fontSize='lg' color='#fff'>
-                                { tableData[tableData.length-1]?.mining }
+                                { (4_300_000 / totalPlanet).toFixed(4) }
                             </StatNumber>
                         </Flex>
                     </Stat>
