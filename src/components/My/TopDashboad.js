@@ -20,22 +20,23 @@ export default function TopDashboad() {
     const { 
         totalPlanet,
         totalHolder,
+        personalHolder
     } = DashboardData;
 
     useEffect(() => {
-        axios.get('https://api.coingecko.com/api/v3/simple/price?ids=havah&vs_currencies=usd')
-        .then(({ data: { havah: { usd } } }) => {
-            setHvhPrice(usd);
-        })
+        getPrice();
+        const myInterval = setInterval(getPrice, 1000 * 60);
+        return () => clearInterval(myInterval);
     });
 
     const numberFormat = (num) => [num].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-    
-    const priceBlock = () => (
-        <StatNumber fontSize='lg' color='#fff' fontWeight='bold'>
-            ${ hvhPrice.toFixed(4) }
-        </StatNumber>
-    );
+
+    const getPrice = () => {
+        axios.get('https://api.coingecko.com/api/v3/simple/price?ids=havah&vs_currencies=usd')
+        .then(({ data: { havah: { usd } } }) => {
+            setHvhPrice(usd);
+        });
+    }
     
     return <SimpleGrid columns={{ sm: 1, md: 2, xl: 4 }} spacing='24px'>
         <Card>
@@ -83,12 +84,17 @@ export default function TopDashboad() {
                 <Flex flexDirection='row' align='center' justify='center' w='100%'>
                     <Stat>
                         <StatLabel fontSize='sm' color='gray.400' fontWeight='bold' pb='2px'>
-                            MINING
+                            APR
                         </StatLabel>
                         <Flex>
-                            <StatNumber fontSize='lg' color='#fff'>
-                                { (4_300_000 / totalPlanet).toFixed(4) }
-                            </StatNumber>
+                            <Skeleton startColor='gray.400' endColor='#fff' isLoaded={hvhPrice > 0}>
+                                <StatNumber fontSize='lg' color='#fff'>
+                                    {
+                                        ((4_300_000 / totalPlanet * hvhPrice * 365 /
+                                        5000 * (1.007 ** (Math.floor(personalHolder / 100) - 1)))*100).toFixed(0)
+                                    } %
+                                </StatNumber>
+                            </Skeleton>
                         </Flex>
                     </Stat>
                     <Spacer />
@@ -107,14 +113,11 @@ export default function TopDashboad() {
                             PRICE
                         </StatLabel>
                         <Flex>
-                            {
-                                hvhPrice > 0 ? priceBlock()
-                                :
-                                    <Skeleton startColor='gray.400' endColor='#fff'>
-                                        { priceBlock() }
-                                    </Skeleton>
-                            }
-                            
+                            <Skeleton startColor='gray.400' endColor='#fff' isLoaded={hvhPrice > 0}>
+                                <StatNumber fontSize='lg' color='#fff' fontWeight='bold'>
+                                    ${ hvhPrice.toFixed(4) }
+                                </StatNumber>
+                            </Skeleton>
                         </Flex>
                     </Stat>
                     <IconBox as='box' h={'45px'} w={'45px'} bg='brand.200'>
