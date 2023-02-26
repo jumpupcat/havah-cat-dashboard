@@ -50,9 +50,11 @@ function setDashBoad (planetData) {
     let personal = 0;
     let mini = 0;
     let vc = 0;
+    const keyDate = Date.parse('2023-01-12');
 
     planetData.map(p => {
-        const date = new Date(Date.parse(p.date) - (1000 * 60 * (60 * 2 + 9))).toISOString().slice(0, 10); 
+        const termNum = Math.floor((p.block - 4188193) / 43200);
+        const date = new Date(keyDate + ((1000 * 60 * 60 * 24) * termNum)).toISOString().slice(0, 10);
         if(!dashbordData[date]) dashbordData[date] = {};
 
         if(!holder[p.address]) {
@@ -93,7 +95,7 @@ function setDashBoad (planetData) {
     ];
     let j = 0;
     for(let i=11; i>=0; i--) {
-        const keyDate = new Date(Date.parse(new Date()) - (1000 * 60 * (60 * 2 + 15)) - ((1000 * 60 * 60 * 24)* i)).toISOString().slice(0, 10);
+        const keyDate = new Date(Date.parse(new Date()) - (1000 * 60 * (60 * 27)) - ((1000 * 60 * 60 * 24)* i)).toISOString().slice(0, 10);
         const defaultChartData = { x: keyDate, y: 0 }
         dashbordData.chartData[0].data[j] = { ...defaultChartData };
         dashbordData.chartData[1].data[j] = { ...defaultChartData };
