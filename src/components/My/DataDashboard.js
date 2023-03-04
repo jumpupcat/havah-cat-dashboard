@@ -46,10 +46,7 @@ export default function DataDashboard() {
                             MINING PLANET
                         </Th>
                         <Th color='gray.400' fontFamily='Plus Jakarta Display' borderBottomColor='#56577A' textAlign="center">
-                            MINING HOLDER
-                        </Th>
-                        <Th color='gray.400' fontFamily='Plus Jakarta Display' borderBottomColor='#56577A' textAlign="center">
-                            MINING
+                            MINING AMOUNT
                         </Th>
                         <Th color='gray.400' fontFamily='Plus Jakarta Display' borderBottomColor='#56577A' textAlign="center">
                             PERSONAL SUPPLY
@@ -78,11 +75,6 @@ export default function DataDashboard() {
                                 <Td borderBottomColor='#56577A' >
                                     <Text fontSize='sm' color='#fff' fontWeight='bold' pb='.5rem' textAlign="center">
                                         { numberFormat(t.totalPlanet) }
-                                    </Text>
-                                </Td>
-                                <Td borderBottomColor='#56577A' >
-                                    <Text fontSize='sm' color='#fff' fontWeight='bold' pb='.5rem' textAlign="center">
-                                        { numberFormat(t.totalHolders) }
                                     </Text>
                                 </Td>
                                 <Td borderBottomColor='#56577A' >
