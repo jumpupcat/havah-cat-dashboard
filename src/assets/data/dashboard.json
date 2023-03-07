@@ -950,7 +950,16 @@
             "mining": "553.5530",
             "totalPlanet": 7768,
             "totalHolders": 485,
-            "holderSupply": 14283742
+            "holderSupply": 14279867
+        },
+        {
+            "date": "2023-03-07",
+            "holders": 0,
+            "planet": 0,
+            "mining": "552.4152",
+            "totalPlanet": 7784,
+            "totalHolders": 489,
+            "holderSupply": 14766987
         }
     ]
 }
