@@ -353,13 +353,13 @@
         "holder": 4
     },
     "2023-03-07": {
-        "planet": 8,
-        "personal": 8,
+        "planet": 9,
+        "personal": 9,
         "holder": 1
     },
-    "totalPlanet": 7792,
+    "totalPlanet": 7793,
     "totalHolder": 490,
-    "personalHolder": 798,
+    "personalHolder": 799,
     "mPlanet": 102,
     "vc": 1892,
     "chartData": [
@@ -960,7 +960,7 @@
         {
             "date": "2023-03-07",
             "holders": 1,
-            "planet": 8,
+            "planet": 9,
             "mining": "552.4152",
             "totalPlanet": 7784,
             "totalHolders": 489,
