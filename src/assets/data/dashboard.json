@@ -353,13 +353,13 @@
         "holder": 4
     },
     "2023-03-07": {
-        "planet": 12,
-        "personal": 12,
-        "holder": 2
+        "planet": 13,
+        "personal": 13,
+        "holder": 3
     },
-    "totalPlanet": 7796,
-    "totalHolder": 491,
-    "personalHolder": 802,
+    "totalPlanet": 7797,
+    "totalHolder": 492,
+    "personalHolder": 803,
     "mPlanet": 102,
     "vc": 1892,
     "chartData": [
@@ -959,12 +959,21 @@
         },
         {
             "date": "2023-03-07",
-            "holders": 2,
-            "planet": 12,
+            "holders": 3,
+            "planet": 13,
             "mining": "552.4152",
             "totalPlanet": 7784,
             "totalHolders": 489,
             "holderSupply": 14766987
+        },
+        {
+            "date": "2023-03-08",
+            "holders": 0,
+            "planet": 0,
+            "mining": "551.4942",
+            "totalPlanet": 7797,
+            "totalHolders": 492,
+            "holderSupply": 15260463
         }
     ]
 }
