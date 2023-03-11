@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/static/js/main.eaabc404.js",
+    "main.js": "/static/js/main.e7c9fd8c.js",
     "static/media/background-body-admin.png": "/static/media/background-body-admin.9a5703c114bec6efe39b.png",
     "index.html": "/index.html",
-    "main.eaabc404.js.map": "/static/js/main.eaabc404.js.map"
+    "main.e7c9fd8c.js.map": "/static/js/main.e7c9fd8c.js.map"
   },
   "entrypoints": [
-    "static/js/main.eaabc404.js"
+    "static/js/main.e7c9fd8c.js"
   ]
 }
