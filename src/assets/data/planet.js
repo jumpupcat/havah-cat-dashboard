@@ -106,14 +106,13 @@ function setDashBoad (planetData) {
         j++;
     }
 
-    const lockData = JSON.parse(fs.readFileSync('src/assets/data/lock.json'));
     const today = new Date(Date.parse(new Date()) - (1000 * 60 * (60 * 2 + 15))).toISOString().slice(0, 10);
 
     dashbordData.tableData = [];
     let sumPlanet = 7086;
     let sumHolder = 270;
     let sumPersonal = 184 + 45;
-    let sumSupply = miningAmount / sumPlanet * sumPersonal - lockData.shift();
+    let sumSupply = miningAmount / sumPlanet * sumPersonal;
     let targetDate = '2023-01-12';
     do {
         const currentH = dashbordData[targetDate]?.holder ? dashbordData[targetDate]?.holder : 0;
@@ -135,9 +134,7 @@ function setDashBoad (planetData) {
         if(dashbordData[targetDate]?.personal) sumPersonal += dashbordData[targetDate].personal;
         if(dashbordData[targetDate]?.mini) sumPersonal += dashbordData[targetDate].mini * 0.9;
         
-        let lockAmount = lockData.shift();
-        if(!lockAmount) lockAmount = 0;
-        sumSupply += miningAmount / sumPlanet * sumPersonal - lockAmount;
+        sumSupply += miningAmount / sumPlanet * sumPersonal;
 
         targetDate = new Date(Date.parse(targetDate) + (1000 * 60 * 60 * 24)).toISOString().slice(0, 10);
     } while(targetDate != new Date(Date.parse(today) + (1000 * 60 * 60 * 24)).toISOString().slice(0, 10));
