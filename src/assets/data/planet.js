@@ -106,7 +106,7 @@ function setDashBoad (planetData) {
         j++;
     }
 
-    const today = new Date(Date.parse(new Date()) - (1000 * 60 * (60 * 2 + 15))).toISOString().slice(0, 10);
+    const today = new Date(Date.parse(new Date()) - (1000 * 60 * (60 * 2))).toISOString().slice(0, 10);
 
     dashbordData.tableData = [];
     let sumPlanet = 7086;
